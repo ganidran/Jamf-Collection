@@ -6,7 +6,7 @@
 
 levelDesktop="/Library/Desktop Pictures/levelDesktop.png"
 desktoppr="/usr/local/bin/desktoppr"
-loggedInUser=$( scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }' )
+loggedInUser=$(stat -f "%Su" /dev/console)
 uid=$(id -u "$loggedInUser")
 
 ###########################
