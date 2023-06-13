@@ -12,7 +12,6 @@ done
 echo "
 --Initial macOS setup complete.--
 "
-sleep 3
 
 ###########################
 ###### SET VARIABLES ######
@@ -65,7 +64,9 @@ else
     "
     jamf policy -event install-swiftdialog
 fi
-sleep 1
+
+# Lag time for system to run
+sleep 15
 
 ###########################
 ## DO ENROLLMENT THINGS ###
@@ -106,7 +107,7 @@ else
     echo "
     --Endpoint Protector does not exist. Installing...--
     "
-    jamf policy -id 20
+    jamf policy -event install_endpoint_protector 
     sleep 0.5
 fi
 
@@ -120,7 +121,7 @@ else
     echo "
     --Google Chrome does not exist. Installing...--
     "
-    jamf policy -id 90
+    jamf policy -event install_google_chrome
     sleep 0.5
 fi
 
@@ -134,7 +135,7 @@ else
     echo "
     --Zoom does not exist. Installing...--
     "
-    jamf policy -id 11
+    jamf policy -event installzoom
     sleep 0.5
 fi
 
