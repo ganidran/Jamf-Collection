@@ -8,4 +8,4 @@ This repository contains a collection of scripts designed for use with Mobile De
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://www.mit.edu/~amini/LICENSE.md).
