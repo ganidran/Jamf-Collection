@@ -19,7 +19,7 @@ accountId=$(plutil -convert xml1 -o - "$mobileMePlist" | awk '/<key>AccountID<\/
 ###########################
 
 # Check if Company images exist
-if [ -e /usr/local/jamf/lvl-icon.png ]
+if [ -e /usr/local/jamf/company-icon.png ]
 then
     echo "Company Images exist. Proceeding..."
 else
@@ -70,6 +70,6 @@ fi
 --quitkey l \
 --width 600 --height 300 \
 --icon caution \
---overlayicon /usr/local/jamf/lvl-icon.png        
+--overlayicon /usr/local/jamf/company-icon.png        
 
 exit 0
