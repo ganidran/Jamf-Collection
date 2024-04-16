@@ -18,7 +18,7 @@ currentChrome=$(plutil -p /Applications/Google\ Chrome.app/Contents/Info.plist |
 ###########################
 
 # Check if Level images exist
-if [ -e /usr/local/jamf/lvl-icon.png ]
+if [ -e /usr/local/jamf/company-icon.png ]
 then
     echo "Level Images exist. Proceeding..."
 else
@@ -63,7 +63,7 @@ curl -L https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.p
 --ontop \
 --button2text "Not Now" \
 --messagefont size=18 \
---icon /usr/local/jamf/lvl-icon.png \
+--icon /usr/local/jamf/company-icon.png \
 --width 600 --height 300
 dialogResults=$?
 
