@@ -82,7 +82,7 @@ fi
 ###########################
 
 # Validate logo file. If no logo is found, download it
-if [ -e "/usr/local/jamf/lvl-icon.png" ]
+if [ -e "/usr/local/jamf/company-icon.png" ]
 then
     echo "
     --Company images exist. Proceeding...--
@@ -94,7 +94,7 @@ else
     jamf policy -event install-company-images
 fi
 # Set logo path
-companyLogo="/usr/local/jamf/lvl-icon.png"
+companyLogo="/usr/local/jamf/company-icon.png"
 
 # Convert POSIX path of logo icon to Mac path for AppleScript.
 logoPosix="$(/usr/bin/osascript -e 'return POSIX file "'"$companyLogo"'" as text')"
