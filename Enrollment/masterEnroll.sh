@@ -39,7 +39,7 @@ echo "
 ###########################
 
 # Check if Company images exist
-if [ -e "/usr/local/jamf/lvl-icon.png" ]
+if [ -e "/usr/local/jamf/company-icon.png" ]
 then
     echo "
     --Company images exist. Proceeding...--
@@ -107,7 +107,7 @@ $"$dialogPath" \
 --title "W E L C O M E    T O    L E V E L" \
 --message "Welcome to Company $userFirst! \n\nYour computer is downloading necessary policies and will restart once it's complete. \n\n**Please** plug in the charger to avoid the computer from shutting down." \
 --messagefont size=18 \
---icon /usr/local/jamf/lvl-icon.png &
+--icon /usr/local/jamf/company-icon.png &
 
 # Lag time
 echo "
@@ -205,7 +205,7 @@ $"$dialogPath" \
 --title "Setup Complete" \
 --timer 120 \
 --message "Almost there $userFirst! Your computer has finished its setup and requires a restart. \n\nPlease restart your computer unless you're onboarding with IT." \
---icon /usr/local/jamf/lvl-icon.png
+--icon /usr/local/jamf/company-icon.png
 dialogResults=$?
 
     # User input
