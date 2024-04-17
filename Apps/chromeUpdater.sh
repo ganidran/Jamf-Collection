@@ -17,13 +17,13 @@ currentChrome=$(plutil -p /Applications/Google\ Chrome.app/Contents/Info.plist |
 ####### FILE CHECKS #######
 ###########################
 
-# Check if Level images exist
+# Check if Company images exist
 if [ -e /usr/local/jamf/company-icon.png ]
 then
-    echo "Level Images exist. Proceeding..."
+    echo "Company Images exist. Proceeding..."
 else
-    echo "Level Images don't not exist. Installing..."
-    jamf policy -event install-level-images
+    echo "Company Images don't not exist. Installing..."
+    jamf policy -event install-Company-images
 fi
 
 # Check if the dialog exists
