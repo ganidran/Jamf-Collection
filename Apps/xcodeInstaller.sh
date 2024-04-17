@@ -21,7 +21,7 @@ jamfBinary="/usr/local/bin/jamf"
 dialog="/usr/local/bin/dialog"
 dialogCommandFile="/var/tmp/dialog.log"
 dialogIcon="https://developer.apple.com/assets/elements/icons/xcode-12/xcode-12-256x256.png"
-dialogInitialTitle="Level IT - Xcode Installer"
+dialogInitialTitle="Company IT - Xcode Installer"
 
 ###########################
 ###### DIALOG STEPS #######
@@ -90,7 +90,7 @@ rm "$dialogCommandFile"
 eval "$dialog" "${dialogCmd[*]}" & sleep 1
 
 # Quit Self Service
-osascript -e 'quit app "Level Self Service"'
+osascript -e 'quit app "Company Self Service"'
 
 # Set up steps
 for (( i=0; i<dialogStepLength; i++ )); do
