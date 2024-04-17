@@ -6,7 +6,7 @@
 ###### SET VARIABLES ######
 ###########################
 
-levelDesktop="/Library/Desktop Pictures/desktopImage.png"
+companyDesktop="/Library/Desktop Pictures/desktopImage.png"
 desktoppr="/usr/local/bin/desktoppr"
 loggedInUser=$(stat -f "%Su" /dev/console)
 uid=$(id -u "$loggedInUser")
@@ -16,7 +16,7 @@ uid=$(id -u "$loggedInUser")
 ###########################
 
 # Set the desktop
-launchctl asuser "$uid" "$desktoppr" "$levelDesktop"
+launchctl asuser "$uid" "$desktoppr" "$companyDesktop"
 
 # Cleanup
 sleep 1
