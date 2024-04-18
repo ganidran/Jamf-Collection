@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Nodified script from Elliot Jordan's guide found here: https://github.com/homebysix/jss-filevault-reissue
+# Modified script from Elliot Jordan's guide found here: https://github.com/homebysix/jss-filevault-reissue
 
 ###########################
 ##### SET VARIABLES #######
