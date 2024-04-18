@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Nodified script from James Smith's guide found here: https://smithjw.me/posts/2022-05-20-installing-xcode-xip/. 
+# Modified script from James Smith's guide found here: https://smithjw.me/posts/2022-05-20-installing-xcode-xip/. 
 
 ###########################
 ##### SET VARIABLES ######
