@@ -109,7 +109,7 @@ Sets a collection of apps, shortcuts and/or folders to the dock based on macOS v
 <summary markdown="span"><strong>Set User Icon</strong></summary>
 <br>
 
-[setDock](https://github.com/ganidran/Jamf-Collection/blob/main/Enrollment/setUserIcon.sh) | 
+[setUserIcon](https://github.com/ganidran/Jamf-Collection/blob/main/Enrollment/setUserIcon.sh) | 
 Sets a predefined user icon during enrollment. This assumes you've packaged and deployed user images to the path in this script earlier in the enrollment process.
 </details>
 <br>
