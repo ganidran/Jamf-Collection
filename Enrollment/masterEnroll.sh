@@ -187,6 +187,13 @@ echo "
 --Dock set--
 "
 
+# Set User Icon
+jamf policy -event set-user-icon
+sleep 0.5
+echo "
+--Dock set--
+"
+
 # Send the email to Jamf's username
 jamf recon -endUsername "$emailAddress"
 echo "
