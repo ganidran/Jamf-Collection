@@ -102,6 +102,15 @@ Sets a desktop image during enrollment. This is contingent on a policy that both
 
 [setDock](https://github.com/ganidran/Jamf-Collection/blob/main/Enrollment/setDock.sh) | 
 Sets a collection of apps, shortcuts and/or folders to the dock based on macOS version. Custom dock is created by Techion's [Dock Master](https://techion.com.au/blog/2015/4/28/dock-master).
+<br><br>
+</details>
+
+<details>
+<summary markdown="span"><strong>Set User Icon</strong></summary>
+<br>
+
+[setDock](https://github.com/ganidran/Jamf-Collection/blob/main/Enrollment/setUserIcon.sh) | 
+Sets a predefined user icon during enrollment. This assumes you've packaged and deployed user images to the path in this script earlier in the enrollment process.
 </details>
 <br>
 
